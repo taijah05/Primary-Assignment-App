@@ -1,0 +1,74 @@
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment App</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="queries.css">
+
+        <div class="main_box">
+            <h1>Assignment App</h1>
+                <div class="choiceBlock">
+                <div class="locationRow">
+                    <h2 class="labels">Location</h2>
+                    <select id="locationChoice">
+                        <option value="bidmc">BIDMC</option>
+                        <option value="bidn">BID - Needham</option>
+                        <option value="bidc">BID - Chelsea</option>
+                        <option value="chestnut hill">BID - Chestnut Hill</option>
+                        <option value="mount auburn">Mount Auburn</option>
+                        <option value="nebh">NEBH</option>
+                        <option value="lahey">Lahey - Burlington</option>
+                        <option value="lahey peabody">Lahey - Peabody</option>
+                        <option value="lexington">BID - Lexington</option>
+                        <option value="winchester">Winchester</option>
+                        <option value="unicorn park">Winchester - Unicorn Park</option>
+                        <option value="plymouth">BID - Plymouth</option>
+                    </select> 
+                </div>
+                <div class="modalityRow">
+                    <h2 class="labels">Modality</h2>
+                    <select id="modalityChoice">
+                        <option value="ultrasound">Ultrasound</option>
+                        <option value="xray">X-Ray</option>
+                        <option value="ct">CT</option>
+                        <option value="mr">MR</option>
+                        <option value="cathlab">Cath Lab</option>
+                        <option value="injector">Injector</option>
+                        <option value="mammo">Mammography</option>
+                        <option value="carm">C-arm</option>
+                        <option value="trophon">Trophon EPR</option>
+                        <option value="trophon2">Trophon 2</option>
+                        <option value="petct">PET/CT</option>
+                        <option value="nucmed">Nuclear Medicine</option>
+                    </select> 
+                </div>
+                <div class="manufactureRow">
+                    <h2 class="labels">Manufacture</h2>
+                    <select id="manufactureChoice">
+                        <option value="ge">GE</option>
+                        <option value="philips">Philips</option>
+                        <option value="siemens">Siemens</option>
+                        <option value="bayer">Bayer</option>
+                        <option value="hologic">Hologic</option>
+                        <option value="nanosonics">Nanosonics</option>
+                    </select> 
+                </div>
+                </div>
+            <button class="search" onclick="searchISE()">Search</button>
+            <div class="answerBlock">
+                <br>
+                    <h3 class="labels">Primary ISE</h3>
+                    <p class="primary" id="primaryISE"></p>
+                    <br>
+                    <h3 class="labels">Secondary ISE</h3>
+                    <p class="secondary" id="secondaryISE"></p>
+                </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+
+</html>
